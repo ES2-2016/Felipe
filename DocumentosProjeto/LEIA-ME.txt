@@ -1,1 +1,2 @@
-# Este arquivo será modificado futuramente
+# Nesta pasta, encontram-se:
+-> TAP_Felipe.odt: Termo de Abertura do Projeto 2. Gerente: Felipe Fronchetti.
