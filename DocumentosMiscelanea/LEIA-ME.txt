@@ -1,1 +1,2 @@
-# Este arquivo será modificado futuramente
+# Nesta pasta, encontram-se:
+-> CHKLIST_Felipe.ods: Checklist do Projeto 3 [TAP]; Gerente: Vinicius Ribeiro Morais; Testador: Felipe Fronchetti
