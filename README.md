@@ -3,9 +3,9 @@ Neste repositório você encontra todos os arquivos referentes ao projeto Sócio
 ## Sobre:
 Para controlar a entrada dos frequentadores de um determinado clube, um sistema será elaborado com base no termo de abertura proposto em Engenharia de Software. Isso deve ser feito para garantir a segurança dos frequentadores do clube e para garantir o seu bom funcionamento. 
 ## Equipe:
-Gerente: Felipe Fronchetti <br/>
-Analista: Noemi Scherer <br/>
-Tester: Vinicius Ribeiro <br/>
-Desenvolvedor: Luis Fernando <br/>
+<b>Gerente:</b> Felipe Fronchetti <br/>
+<b>Analista:</b> Noemi Scherer <br/>
+<b>Testador:</b> Vinicius Ribeiro <br/>
+<b>Desenvolvedor:</b> Luis Fernando <br/>
 
 <div style="text-align:center"><img src ="http://static.panoramio.com/photos/original/8422793.jpg" /></div>
