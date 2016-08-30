@@ -1,2 +1,2 @@
 # Felipe Fronchetti
-Neste repositório você encontra todos os arquivos referentes ao projeto Sócios do Clube :horse:
+:evergreen_tree: Neste repositório você encontra todos os arquivos referentes ao projeto Sócios do Clube :evergreen_tree:
