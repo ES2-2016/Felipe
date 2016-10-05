@@ -7,5 +7,3 @@ Para controlar a entrada dos frequentadores de um determinado clube, um sistema 
 <b>Analista:</b> Noemi Scherer <br/>
 <b>Testador:</b> Vinicius Ribeiro <br/>
 <b>Desenvolvedor:</b> Luis Fernando <br/>
-
-<div style="text-align:center"><img src ="http://static.panoramio.com/photos/original/8422793.jpg" /></div>
