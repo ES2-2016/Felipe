@@ -1,3 +1,4 @@
 # Nesta pasta, encontram-se:
 -> TAP_Felipe.odt: Termo de Abertura do Projeto 2. Gerente: Felipe Fronchetti.
 -> PGP_Felipe.odt: Plano de Gerenciamento de Projeto. 
+-> EAP.jpg : Estrutura Analítica do Projeto (Primeira Entrega)
