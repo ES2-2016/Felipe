@@ -1,0 +1,39 @@
+DROP TABLE IF EXISTS usuario;
+
+CREATE TABLE usuario (
+	nome Varchar(40),
+	login Varchar(30),
+	senha Varchar(40),
+	data_nascimento varchar(10),
+	sexo Varchar(10),
+	rg varchar(20),
+	mensalidade varchar(20),
+	PRIMARY KEY (rg)
+);
+
+CREATE TABLE dependente (
+	nome Varchar(40),
+	data_nascimento varchar(10),
+	sexo Varchar(10),
+	rg varchar(20),
+	id varchar(20),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE atividade (
+	nome Varchar(40),
+	id Varchar(30),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE historico (
+	data Varchar(40),
+	id Varchar(30),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE pagamento (
+	data Varchar(40),
+	id Varchar(30),
+	PRIMARY KEY (id)
+);
