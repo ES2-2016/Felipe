@@ -1,57 +1,28 @@
+
 <?php 
-require_once("_con.php");
-$login = $_POST['login'];
-$senha = $_POST['senha'];
+session_start();
 
-if (!empty($_POST) AND (empty($_POST['login']) OR empty($_POST['senha']))){
-	echo("campos inválidos");      	
-	header("Location: login.html"); 
-	exit;
-}
+echo "<html><head><title>Área do Funcionário</title>\n";
+echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
+echo "<link rel=stylesheet href=\"../Css.php\" type=\"text/css\">\n";
 
-$dbc = mysqli_connect($host,$user,$pass, $db);
+echo "<script language=\"javascript\" src=\"../reload.js\"></script>\n";
+echo "</head><body onload=\"Comecar()\" onunload=\"Parar()\"><table border=1 width=\"100%\">\n";
+echo "<tr><td nowrap bgcolor=\"#aaaaee\" align=center>";
+echo "<img src=\"../images/smallballoontransp.png\" alt=\"\">";
+echo "<font color=\"#000000\">Imagem</font>";
+echo "</td><td bgcolor=\"#aaaaee\" width=\"99%\">\n";
+echo "Usuário: " . $_SESSION['usuario']['nome'] . "\n";
 
-/* check connection */
-if (mysqli_connect_errno()) {
-    printf("Connect failed: %s\n", mysqli_connect_error());
-    exit();
-}
 
-$query = "SELECT * FROM usuario WHERE login = '$login' AND senha = '$senha'";
-
-$retornoQuery= mysqli_query($dbc, $query);
-
-$row=mysqli_fetch_row($retornoQuery);
-
-//var_dump($row);
-echo ($row[1]);
-
-// $resultado = mysql_fetch_assoc($query);
-
-// while($row = mysql_fetch_assoc($verifica)){
-// 	$unidade_ferativa = $row["unidade_federativa"];
-// 	$endereco = $row["endereço"];
-// }
-
-// if (mysql_num_rows($verifica) > 0){
-// 	session_start();
-// 	$_SESSION['login']=$login;
-//         $_SESSION['senha']=$_POST['senha'];
-// 	$_SESSION['unidade_federativa']=$unidade_federativa;
-// 	$_SESSION['endereço']=$endereco;
-// 	setcookie("login",$login);
-// 	header('Location: pagina_inicial.html');
-// }else {
-// 	session_destroy();
-// 	unset ($_SESSION['login']);
-// 	unset ($_SESSION['senha']);
-// 	unset ($_SESSION['unidade_federativa']);
-// 	unset ($_SESSION['endereço']);
-//        	//die();
-
-// 	header("Location:index.php");
-// }
-
-//header('Location: pagina_inicial.html');
-
+echo "</table>\n";
+echo "<table border=0 width=\"100%\" align=center>\n";
+echo " <tr>\n";
+echo "  <td align=center width=\"12%\"><a class=menu style=\"font-weight:bold\" href=verCad.php>Ver Dados Cadastrais</a></td>\n";
+echo "  <td align=center width=\"12%\"><a class=menu style=\"font-weight:bold\" href=alterarCad.php>Alterar Dados Cadastrais</a></td>\n";
+echo "  <td align=center width=\"12%\"><a class=menu style=\"font-weight:bold\" href=verAtivi.php>Ver Atividades Contratadas </a></td>\n";
+echo "  <td align=center width=\"12%\"><a class=menu style=\"font-weight:bold\" href=histoVisitas.php>Histórico de Visitas</a></td>\n";
+echo "  <td align=center width=\"12%\"><a class=menu style=\"font-weight:bold\" href=../index.php?logout=true>Sair</a></td>\n";
+echo " </tr>\n"; 
+echo "</table>\n";
 ?>
